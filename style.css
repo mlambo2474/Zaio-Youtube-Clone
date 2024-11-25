@@ -194,6 +194,7 @@ h3{
 .video{
     width: calc(33.33%-20px);
     margin-bottom: 50px;
+   
   
 }
 .thumbnail img{
@@ -201,9 +202,6 @@ h3{
     height: 192.92px;
     border-radius: 20px;
     padding: 5px;
-    display: flex;
-  
-    justify-content: center;
     align-items: center;
 }
 .thumbnail img:hover{
