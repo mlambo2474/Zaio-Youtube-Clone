@@ -185,10 +185,10 @@ h3{
    overflow-y: scroll;
 }
 .video-grid{
-    margin: 20px;
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .video{
@@ -196,9 +196,18 @@ h3{
     margin-bottom: 50px;
   
 }
-.thumbnail .img{
-    width: 100%;
-    margin: 20px;
+.thumbnail img{
+    width: 342.98px;
+    height: 192.92px;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+}
+.thumbnail img:hover{
+    border-radius: 0;
 }
 
 .details{
