@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-@media(max-width:768px) and (min-width:480px){
+@media(max-width:1000px) and (min-width:480px){
    .navbar{
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ body{
     box-sizing: border-box;
 }
 .container{
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar{
@@ -194,7 +194,7 @@ body{
   width: 240px;
   height: 100%;
   overflow-y: scroll;
-  overflow-x: none;
+  overflow-x: hidden;
   
 }
 
@@ -207,13 +207,16 @@ body{
     display: flex;
     align-items: center;
     height: 40px;
-    padding: 0 24px;
+    padding: 0 0 0 24px;
     font-size:14px;
     color: #0F0F0F;
     font-family: Roboto,arial sans-serif;
+    cursor: pointer;
+
+    /* width: 200px; */
 }
 .category:hover{
-    background-color: #cccccc;
+    background-color: #dddddddd;
     border-radius: 8px;
 }
 .active{
@@ -232,6 +235,8 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
+    cursor: pointer;
+
 }
   
 .categories i{
@@ -248,11 +253,15 @@ h3{
     font-weight: 400;  
 }
 .categories-footer{
-    padding: 25px;
+     padding: 25px; 
+     width: 180px;
+    overflow-x: hidden;
   
   }
   .footer-section{
     margin-bottom: 12px;
+    text-align: start;
+ 
   }
   
   .footer-section span{
@@ -260,12 +269,15 @@ h3{
     font-weight: 500;
     margin-right: 5px;
     color: rgb(96, 96, 96);
+   cursor: pointer;
+   
   }
   .copyright{
     font-size: 13px;
     font-weight: 20px;
     margin-bottom: 20px;
     color: rgb(96, 96, 96);
+    
   }
 .main{
     width: 100%;
@@ -273,7 +285,7 @@ h3{
 }
 
 .videos{
-   width: 95%;
+   width: 100%;
    background-color: #f8f8f8;
    height: 100%;
    padding: 15px 0;
@@ -287,6 +299,7 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /* width: 100%; */
 }
 .video{
     width: calc(33.33%-20px);
@@ -296,7 +309,7 @@ h3{
     cursor: pointer;
 }
 .thumbnail img{
-    width: 342.98px;
+   min-width: 342.98px;
     height: 192.92px;
     border-radius: 20px;
     padding: 5px;
